@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#111b37">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>מחוגים כאלה</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <div class="brand"><span class="brand-icon">◆</span><span>מחוגים כאלה</span></div>
+      <div class="top-help">רצים לבד · קופצים רווח או נגיעה במסך · מכה X · ירי Z · הפסקה P</div>
+    </header>
+    <div class="game-wrap">
+      <canvas id="game" width="960" height="540" aria-label="משחק מחוגים כאלה: קפיצה מעל גשרים שבורים, רעל וסכינים, איסוף מטבעות ובונוסים, עם בוס בסוף כל שלב"></canvas>
+      <div class="sys-buttons"><button id="pauseBtn" type="button" aria-label="הפסקה">⏸</button><button id="muteBtn" type="button" aria-label="צליל">🔊</button></div>
+      <div class="overlay" id="overlay">
+        <div class="panel">
+          <div class="panel-kicker" id="panelKicker">משחק הרפתקה</div>
+          <h1 id="panelTitle">מחוגים כאלה</h1>
+          <p id="panelText">מחוג קטן עם ידיים ורגליים יוצא לחצות חמישה שלבים שונים. קפצו מעל מכשולים, ירו בחיילים, הרסו מפקדות והביסו בוס בסוף כל שלב.</p>
+          <button id="mainButton" type="button">מתחילים לשחק ←</button>
+          <div class="panel-controls">המחוג רץ לבד · נגיעה במסך / רווח: קפיצה · ↑ ↓ / W S: טיפוס · X / J: מכה · Z / C: ירי</div>
+        </div>
+      </div>
+      <div class="touch-controls" aria-label="כפתורי משחק למסך מגע">
+        <div class="touch-group"><button data-control="attack" aria-label="מכה">⚔</button><button data-control="shoot" aria-label="ירי">✦</button><button data-control="down" aria-label="לרדת מהעץ">↓</button><button data-control="up" aria-label="לטפס על העץ">↑</button></div>
+      </div>
+    </div>
+    <footer>שישה שלבים · מטבעות ובונוסים · מפקדות וטילים · נקודת שמירה בכל שלב<span class="phone-tip">· בטלפון: נגיעה במשחק קופצת, כדאי לשחק לרוחב</span></footer>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
